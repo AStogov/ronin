@@ -15,24 +15,62 @@ from data_glob_speed import *
 from transformations import *
 from metric import compute_ate_rte
 from model_resnet1d import *
-
+from model_resmlp import *
 _input_channel, _output_channel = 6, 2
 _fc_config = {'fc_dim': 512, 'in_dim': 7, 'dropout': 0.5, 'trans_planes': 128}
 
 
-def get_model(arch):
+def get_model(arch, feature_dim=512, layer=6, expansion=4):
     if arch == 'resnet18':
-        network = ResNet1D(_input_channel, _output_channel, BasicBlock1D, [2, 2, 2, 2],
-                           base_plane=64, output_block=FCOutputModule, kernel_size=3, **_fc_config)
+        network = ResNet1D(_input_channel,
+                           _output_channel,
+                           BasicBlock1D, [2, 2, 2, 2],
+                           base_plane=64,
+                           output_block=FCOutputModule,
+                           kernel_size=3,
+                           **_fc_config)
     elif arch == 'resnet50':
         # For 1D network, the Bottleneck structure results in 2x more parameters, therefore we stick to BasicBlock.
         _fc_config['fc_dim'] = 1024
-        network = ResNet1D(_input_channel, _output_channel, BasicBlock1D, [3, 4, 6, 3],
-                           base_plane=64, output_block=FCOutputModule, kernel_size=3, **_fc_config)
+        network = ResNet1D(_input_channel,
+                           _output_channel,
+                           BasicBlock1D, [3, 4, 6, 3],
+                           base_plane=64,
+                           output_block=FCOutputModule,
+                           kernel_size=3,
+                           **_fc_config)
     elif arch == 'resnet101':
         _fc_config['fc_dim'] = 1024
-        network = ResNet1D(_input_channel, _output_channel, BasicBlock1D, [3, 4, 23, 3],
-                           base_plane=64, output_block=FCOutputModule, **_fc_config)
+        network = ResNet1D(_input_channel,
+                           _output_channel,
+                           BasicBlock1D, [3, 4, 23, 3],
+                           base_plane=64,
+                           output_block=FCOutputModule,
+                           **_fc_config)
+    elif arch == "resmlp":
+        model_para = {
+            "input_len": 200,
+            "input_channel": 6,
+            "patch_len": 25,
+            "feature_dim": feature_dim,
+            "out_dim": _output_channel,
+            "active_func": "GELU",
+            "extractor": {
+                # include: Feature Convert & ResMLP Module in the paper Fig. 3.
+                "name": "ResMLP",
+                "layer_num": layer,
+                "expansion": expansion,
+                "dropout": 0.2,
+            },
+            "reg": {
+                # Regression in the paper Fig.3
+                "name": "MeanMLP",
+                # "name": "MLP",
+                # "name": "MaxMLP",
+                "layer_num": 1,
+            }
+        }
+        network = TwoLayerModel(model_para=model_para)
     else:
         raise ValueError('Invalid architecture: ', args.arch)
     return network
@@ -44,7 +82,7 @@ def run_test(network, data_loader, device, eval_mode=True):
     if eval_mode:
         network.eval()
     for bid, (feat, targ, _, _) in enumerate(data_loader):
-        pred = network(feat.to(device)).cpu().detach().numpy()
+        pred = network(feat.to(device))[0].cpu().detach().numpy()
         targets_all.append(targ.detach().numpy())
         preds_all.append(pred)
     targets_all = np.concatenate(targets_all, axis=0)
@@ -74,7 +112,8 @@ def get_dataset(root_dir, data_list, args, **kwargs):
     elif mode == 'test':
         shuffle = False
         grv_only = True
-
+    
+    seq_type = None
     if args.dataset == 'ronin':
         seq_type = GlobSpeedSequence
     elif args.dataset == 'ridi':
@@ -99,18 +138,29 @@ def get_dataset_from_list(root_dir, list_path, args, **kwargs):
 def train(args, **kwargs):
     # Loading data
     start_t = time.time()
-    train_dataset = get_dataset_from_list(args.root_dir, args.train_list, args, mode='train')
-    train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True)
+    train_dataset = get_dataset_from_list(args.root_dir,
+                                          args.train_list,
+                                          args,
+                                          mode='train')
+    train_loader = DataLoader(train_dataset,
+                              batch_size=args.batch_size,
+                              shuffle=True)
 
     end_t = time.time()
-    print('Training set loaded. Feature size: {}, target size: {}. Time usage: {:.3f}s'.format(
-        train_dataset.feature_dim, train_dataset.target_dim, end_t - start_t))
+    print(
+        'Training set loaded. Feature size: {}, target size: {}. Time usage: {:.3f}s'
+        .format(train_dataset.feature_dim, train_dataset.target_dim,
+                end_t - start_t))
     val_dataset, val_loader = None, None
     if args.val_list is not None:
-        val_dataset = get_dataset_from_list(args.root_dir, args.val_list, args, mode='val')
+        val_dataset = get_dataset_from_list(args.root_dir,
+                                            args.val_list,
+                                            args,
+                                            mode='val')
         val_loader = DataLoader(val_dataset, batch_size=512, shuffle=True)
 
-    device = torch.device('cuda:0' if torch.cuda.is_available() and not args.cpu else 'cpu')
+    device = torch.device(
+        'cuda:0' if torch.cuda.is_available() and not args.cpu else 'cpu')
 
     summary_writer = None
     if args.out_dir is not None:
@@ -125,16 +175,19 @@ def train(args, **kwargs):
     global _fc_config
     _fc_config['in_dim'] = args.window_size // 32 + 1
 
-    network = get_model(args.arch).to(device)
+    network = get_model(args.arch, 128).to(device)
     print('Number of train samples: {}'.format(len(train_dataset)))
     if val_dataset:
         print('Number of val samples: {}'.format(len(val_dataset)))
     total_params = network.get_num_params()
     print('Total number of parameters: ', total_params)
-
-    criterion = torch.nn.MSELoss()
-    optimizer = torch.optim.Adam(network.parameters(), args.lr)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, verbose=True, eps=1e-12)
+    from losses import get_loss
+    optimizer = torch.optim.AdamW(network.parameters(), args.lr)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer,
+                                                           factor=0.1,
+                                                           patience=10,
+                                                           verbose=True,
+                                                           eps=1e-12)
 
     start_epoch = 0
     if args.continue_from is not None and osp.exists(args.continue_from):
@@ -155,20 +208,25 @@ def train(args, **kwargs):
     train_losses_all, val_losses_all = [], []
 
     # Get the initial loss.
-    init_train_targ, init_train_pred = run_test(network, train_loader, device, eval_mode=False)
+    init_train_targ, init_train_pred = run_test(network,
+                                                train_loader,
+                                                device,
+                                                eval_mode=False)
 
-    init_train_loss = np.mean((init_train_targ - init_train_pred) ** 2, axis=0)
+    init_train_loss = np.mean((init_train_targ - init_train_pred)**2, axis=0)
     train_losses_all.append(np.mean(init_train_loss))
     print('-------------------------')
-    print('Init: average loss: {}/{:.6f}'.format(init_train_loss, train_losses_all[-1]))
+    print('Init: average loss: {}/{:.6f}'.format(init_train_loss,
+                                                 train_losses_all[-1]))
     if summary_writer is not None:
         add_summary(summary_writer, init_train_loss, 0, 'train')
 
     if val_loader is not None:
         init_val_targ, init_val_pred = run_test(network, val_loader, device)
-        init_val_loss = np.mean((init_val_targ - init_val_pred) ** 2, axis=0)
+        init_val_loss = np.mean((init_val_targ - init_val_pred)**2, axis=0)
         val_losses_all.append(np.mean(init_val_loss))
-        print('Validation loss: {}/{:.6f}'.format(init_val_loss, val_losses_all[-1]))
+        print('Validation loss: {}/{:.6f}'.format(init_val_loss,
+                                                  val_losses_all[-1]))
         if summary_writer is not None:
             add_summary(summary_writer, init_val_loss, 0, 'val')
 
@@ -178,36 +236,41 @@ def train(args, **kwargs):
             network.train()
             train_outs, train_targets = [], []
             for batch_id, (feat, targ, _, _) in enumerate(train_loader):
+                # [batch_size, feature_dim, window_size], [batch_size, target_dim]
                 feat, targ = feat.to(device), targ.to(device)
                 optimizer.zero_grad()
-                pred = network(feat)
+                pred, pred_logstd = network(feat)
                 train_outs.append(pred.cpu().detach().numpy())
                 train_targets.append(targ.cpu().detach().numpy())
-                loss = criterion(pred, targ)
+                loss = get_loss(pred, pred_logstd, targ, epoch)
                 loss = torch.mean(loss)
                 loss.backward()
                 optimizer.step()
                 step += 1
             train_outs = np.concatenate(train_outs, axis=0)
             train_targets = np.concatenate(train_targets, axis=0)
-            train_losses = np.average((train_outs - train_targets) ** 2, axis=0)
+            train_losses = np.average((train_outs - train_targets)**2, axis=0)
 
             end_t = time.time()
             print('-------------------------')
-            print('Epoch {}, time usage: {:.3f}s, average loss: {}/{:.6f}'.format(
-                epoch, end_t - start_t, train_losses, np.average(train_losses)))
+            print('Epoch {}, time usage: {:.3f}s, average loss: {}/{:.6f}'.
+                  format(epoch, end_t - start_t, train_losses,
+                         np.average(train_losses)))
             train_losses_all.append(np.average(train_losses))
 
             if summary_writer is not None:
                 add_summary(summary_writer, train_losses, epoch + 1, 'train')
-                summary_writer.add_scalar('optimizer/lr', optimizer.param_groups[0]['lr'], epoch)
+                summary_writer.add_scalar('optimizer/lr',
+                                          optimizer.param_groups[0]['lr'],
+                                          epoch)
 
             if val_loader is not None:
                 network.eval()
                 val_outs, val_targets = run_test(network, val_loader, device)
-                val_losses = np.average((val_outs - val_targets) ** 2, axis=0)
+                val_losses = np.average((val_outs - val_targets)**2, axis=0)
                 avg_loss = np.average(val_losses)
-                print('Validation loss: {}/{:.6f}'.format(val_losses, avg_loss))
+                print('Validation loss: {}/{:.6f}'.format(
+                    val_losses, avg_loss))
                 scheduler.step(avg_loss)
                 if summary_writer is not None:
                     add_summary(summary_writer, val_losses, epoch + 1, 'val')
@@ -215,17 +278,25 @@ def train(args, **kwargs):
                 if avg_loss < best_val_loss:
                     best_val_loss = avg_loss
                     if args.out_dir and osp.isdir(args.out_dir):
-                        model_path = osp.join(args.out_dir, 'checkpoints', 'checkpoint_%d.pt' % epoch)
-                        torch.save({'model_state_dict': network.state_dict(),
-                                    'epoch': epoch,
-                                    'optimizer_state_dict': optimizer.state_dict()}, model_path)
+                        model_path = osp.join(args.out_dir, 'checkpoints',
+                                              'checkpoint_%d.pt' % epoch)
+                        torch.save(
+                            {
+                                'model_state_dict': network.state_dict(),
+                                'epoch': epoch,
+                                'optimizer_state_dict': optimizer.state_dict()
+                            }, model_path)
                         print('Model saved to ', model_path)
             else:
                 if args.out_dir is not None and osp.isdir(args.out_dir):
-                    model_path = osp.join(args.out_dir, 'checkpoints', 'checkpoint_%d.pt' % epoch)
-                    torch.save({'model_state_dict': network.state_dict(),
-                                'epoch': epoch,
-                                'optimizer_state_dict': optimizer.state_dict()}, model_path)
+                    model_path = osp.join(args.out_dir, 'checkpoints',
+                                          'checkpoint_%d.pt' % epoch)
+                    torch.save(
+                        {
+                            'model_state_dict': network.state_dict(),
+                            'epoch': epoch,
+                            'optimizer_state_dict': optimizer.state_dict()
+                        }, model_path)
                     print('Model saved to ', model_path)
 
             total_epoch = epoch
@@ -236,10 +307,14 @@ def train(args, **kwargs):
 
     print('Training complete')
     if args.out_dir:
-        model_path = osp.join(args.out_dir, 'checkpoints', 'checkpoint_latest.pt')
-        torch.save({'model_state_dict': network.state_dict(),
-                    'optimizer_state_dict': optimizer.state_dict(),
-                    'epoch': total_epoch}, model_path)
+        model_path = osp.join(args.out_dir, 'checkpoints',
+                              'checkpoint_latest.pt')
+        torch.save(
+            {
+                'model_state_dict': network.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'epoch': total_epoch
+            }, model_path)
         print('Checkpoint saved to ', model_path)
 
     return train_losses_all, val_losses_all
@@ -290,7 +365,7 @@ def test_sequence(args):
     global _fc_config
     _fc_config['in_dim'] = args.window_size // 32 + 1
 
-    network = get_model(args.arch)
+    network = get_model(args.arch, 128)
 
     network.load_state_dict(checkpoint['model_state_dict'])
     network.eval().to(device)
@@ -324,6 +399,7 @@ def test_sequence(args):
         print('Sequence {}, loss {} / {}, ate {:.6f}, rte {:.6f}'.format(data, losses, np.mean(losses), ate, rte))
 
         # Plot figures
+        targ_names = ['vx', 'vy']
         kp = preds.shape[1]
         if kp == 2:
             targ_names = ['vx', 'vy']
@@ -400,7 +476,7 @@ if __name__ == '__main__':
     parser.add_argument('--window_size', type=int, default=200)
     parser.add_argument('--mode', type=str, default='train', choices=['train', 'test'])
     parser.add_argument('--lr', type=float, default=1e-04)
-    parser.add_argument('--batch_size', type=int, default=128)
+    parser.add_argument('--batch_size', type=int, default=1024)
     parser.add_argument('--epochs', type=int, default=10000)
     parser.add_argument('--arch', type=str, default='resnet18')
     parser.add_argument('--cpu', action='store_true')

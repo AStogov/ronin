@@ -170,3 +170,9 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+tests/
+train_dataset/
+unseen_subjects_test_set/
+seen_subjects_test_set/
+models/
