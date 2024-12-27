@@ -1,6 +1,5 @@
 import torch
 import numpy as np
-from covariance_parametrization import DiagonalParam
 
 MIN_LOG_STD = np.log(1e-3)
 """
@@ -70,12 +69,6 @@ pred_logstd (Nx6): u = [log(sigma_x) log(sigma_y) log(sigma_z)
 FunStuff
 """
 
-
-def criterion_distribution(pred, pred_logstd, targ):
-    loss = DiagonalParam.toMahalanobisDistance(targ,
-                                               pred,
-                                               pred_logstd,
-                                               clamp_logstdariance=False)
 
 
 """

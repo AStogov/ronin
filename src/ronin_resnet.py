@@ -16,6 +16,7 @@ from transformations import *
 from metric import compute_ate_rte
 from model_resnet1d import *
 from model_resmlp import *
+from model_moe import *
 _input_channel, _output_channel = 6, 2
 _fc_config = {'fc_dim': 512, 'in_dim': 7, 'dropout': 0.5, 'trans_planes': 128}
 
@@ -71,6 +72,30 @@ def get_model(arch, feature_dim=512, layer=6, expansion=4):
             }
         }
         network = TwoLayerModel(model_para=model_para)
+    elif arch == "moe":
+        model_para = {
+            "input_len": 200,
+            "input_channel": 6,
+            "patch_len": 25,
+            "feature_dim": feature_dim,
+            "out_dim": _output_channel,
+            "active_func": "GELU",
+            "extractor": {
+                # include: Feature Convert & ResMLP Module in the paper Fig. 3.
+                "name": "ResMLP",
+                "layer_num": layer,
+                "expansion": expansion,
+                "dropout": 0.2,
+            },
+            "reg": {
+                # Regression in the paper Fig.3
+                "name": "MeanMLP",
+                # "name": "MLP",
+                # "name": "MaxMLP",
+                "layer_num": 1,
+            }
+        }
+        network = MoeModel(model_para=model_para, num_experts=6, input_dim=int(200), topk=2, capacity_factor=2.4)
     else:
         raise ValueError('Invalid architecture: ', args.arch)
     return network
