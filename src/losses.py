@@ -87,8 +87,9 @@ def get_loss(pred, pred_logstd, targ, epoch, switch_epoch=10):
 				loss = loss_distribution_diag(pred, pred_logstd, targ)
 		"""
 
-    if epoch < switch_epoch:
-        pred_logstd = pred_logstd.detach()
+    # if epoch < switch_epoch:
+
+    pred_logstd = pred_logstd.detach()
 
     loss = loss_distribution_diag(pred, pred_logstd, targ)
 

@@ -21,7 +21,7 @@ _input_channel, _output_channel = 6, 2
 _fc_config = {'fc_dim': 512, 'in_dim': 7, 'dropout': 0.5, 'trans_planes': 128}
 
 
-def get_model(arch, feature_dim=512, layer=6, expansion=4):
+def get_model(arch, feature_dim=128, layer=5, expansion=4):
     if arch == 'resnet18':
         network = ResNet1D(_input_channel,
                            _output_channel,
@@ -95,7 +95,7 @@ def get_model(arch, feature_dim=512, layer=6, expansion=4):
                 "layer_num": 1,
             }
         }
-        network = MoeModel(model_para=model_para, num_experts=6, input_dim=int(200), topk=2, capacity_factor=2.4)
+        network = MoeModel(model_para=model_para, num_experts=6, input_dim=int(200), topk=2, capacity_factor=1.8)
     else:
         raise ValueError('Invalid architecture: ', args.arch)
     return network
@@ -199,7 +199,7 @@ def train(args, **kwargs):
 
     global _fc_config
     _fc_config['in_dim'] = args.window_size // 32 + 1
-
+    MSELoss = nn.MSELoss()
     network = get_model(args.arch, 128).to(device)
     print('Number of train samples: {}'.format(len(train_dataset)))
     if val_dataset:
@@ -267,7 +267,7 @@ def train(args, **kwargs):
                 pred, pred_logstd = network(feat)
                 train_outs.append(pred.cpu().detach().numpy())
                 train_targets.append(targ.cpu().detach().numpy())
-                loss = get_loss(pred, pred_logstd, targ, epoch)
+                loss = MSELoss(pred, targ)
                 loss = torch.mean(loss)
                 loss.backward()
                 optimizer.step()
@@ -350,7 +350,7 @@ def recon_traj_with_preds(dataset, preds, seq_id=0, **kwargs):
     Reconstruct trajectory with predicted global velocities.
     """
     ts = dataset.ts[seq_id]
-    ind = np.array([i[1] for i in dataset.index_map if i[0] == seq_id], dtype=np.int)
+    ind = np.array([i[1] for i in dataset.index_map if i[0] == seq_id], dtype=int)
     dts = np.mean(ts[ind[1:]] - ts[ind[:-1]])
     pos = np.zeros([preds.shape[0] + 2, 2])
     pos[0] = dataset.gt_pos[seq_id][0, :2]
@@ -404,7 +404,7 @@ def test_sequence(args):
     for data in test_data_list:
         seq_dataset = get_dataset(root_dir, [data], args, mode='test')
         seq_loader = DataLoader(seq_dataset, batch_size=1024, shuffle=False)
-        ind = np.array([i[1] for i in seq_dataset.index_map if i[0] == 0], dtype=np.int)
+        ind = np.array([i[1] for i in seq_dataset.index_map if i[0] == 0], dtype=int)
 
         targets, preds = run_test(network, seq_loader, device, True)
         losses = np.mean((targets - preds) ** 2, axis=0)

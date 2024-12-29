@@ -1,0 +1,819 @@
+a014_1: device: asus4, ori_error (game_rv): 18.514
+a001_1: device: asus7, ori_error (game_rv): 4.492
+a025_1: device: samsung1, ori_error (ekf): 0.678
+a027_1: device: samsung1, ori_error (game_rv): 1.311
+a025_3: device: samsung1, ori_error (ekf): 5.755
+a017_1: device: samsung1, ori_error (game_rv): 4.741
+a036_1: device: asus4, ori_error (game_rv): 2.034
+a021_3: device: samsung1, ori_error (game_rv): 15.148
+a000_5: device: asus3, ori_error (game_rv): 6.396
+a014_3: device: asus4, ori_error (game_rv): 9.837
+a010_1: device: samsung1, ori_error (ekf): 3.874
+a027_3: device: samsung1, ori_error (game_rv): 8.191
+a015_3: device: samsung1, ori_error (game_rv): 7.806
+a034_1: device: asus7, ori_error (ekf): 3.702
+a022_1: device: asus5, ori_error (game_rv): 15.663
+a034_3: device: asus7, ori_error (game_rv): 8.244
+a005_1: device: samsung1, ori_error (game_rv): 3.970
+a045_2: device: samsung1, ori_error (game_rv): 4.817
+a056_1: device: asus3, ori_error (game_rv): 10.203
+a000_8: device: samsung1, ori_error (game_rv): 8.601
+a056_3: device: asus3, ori_error (game_rv): 14.046
+a033_1: device: samsung1, ori_error (game_rv): 7.305
+a009_2: device: asus4, ori_error (game_rv): 0.892
+a000_6: device: asus3, ori_error (game_rv): 3.249
+a015_2: device: samsung1, ori_error (game_rv): 14.623
+a045_3: device: samsung1, ori_error (game_rv): 12.975
+a015_1: device: samsung1, ori_error (game_rv): 16.236
+a003_2: device: samsung1, ori_error (ekf): 6.719
+a003_1: device: samsung1, ori_error (game_rv): 10.616
+a026_3: device: asus4, ori_error (game_rv): 11.625
+a000_2: device: asus5, ori_error (game_rv): 6.297
+a059_1: device: asus4, ori_error (game_rv): 11.312
+a023_2: device: asus5, ori_error (game_rv): 2.423
+a028_3: device: asus4, ori_error (game_rv): 4.216
+a000_1: device: asus5, ori_error (game_rv): 3.520
+a039_1: device: asus3, ori_error (game_rv): 2.205
+a047_1: device: asus4, ori_error (game_rv): 15.231
+a004_2: device: asus3, ori_error (ekf): 9.161
+a046_1: device: samsung1, ori_error (ekf): 6.108
+a002_1: device: asus4, ori_error (ekf): 0.202
+a012_1: device: samsung1, ori_error (game_rv): 8.180
+a010_3: device: samsung1, ori_error (ekf): 1.013
+a059_3: device: asus4, ori_error (game_rv): 9.448
+a023_3: device: asus5, ori_error (game_rv): 3.493
+a031_1: device: samsung1, ori_error (game_rv): 2.492
+a026_1: device: asus4, ori_error (game_rv): 1.881
+a036_3: device: asus4, ori_error (game_rv): 12.798
+a011_3: device: samsung1, ori_error (gyro_integration): 2.988
+a018_2: device: asus4, ori_error (ekf): 3.249
+a033_3: device: samsung1, ori_error (game_rv): 10.423
+a031_3: device: samsung1, ori_error (game_rv): 6.005
+a037_3: device: asus4, ori_error (ekf): 1.919
+a000_3: device: asus7, ori_error (game_rv): 5.766
+a007_2: device: samsung1, ori_error (ekf): 9.989
+a001_3: device: asus7, ori_error (game_rv): 4.842
+a000_9: device: samsung1, ori_error (game_rv): 3.001
+a018_3: device: asus4, ori_error (game_rv): 2.196
+a039_2: device: asus3, ori_error (game_rv): 17.383
+a040_3: device: samsung1, ori_error (game_rv): 4.998
+a038_3: device: samsung1, ori_error (game_rv): 8.722
+a035_1: device: samsung1, ori_error (ekf): 8.230
+a002_2: device: asus4, ori_error (game_rv): 16.300
+a009_3: device: asus4, ori_error (game_rv): 4.977
+a017_3: device: samsung1, ori_error (game_rv): 3.693
+a020_1: device: asus3, ori_error (game_rv): 5.644
+a013_3: device: asus4, ori_error (game_rv): 1.129
+a038_1: device: samsung1, ori_error (game_rv): 10.237
+a000_10: device: asus4, ori_error (game_rv): 6.669
+a044_1: device: samsung1, ori_error (game_rv): 12.306
+a021_1: device: samsung1, ori_error (ekf): 1.009
+a011_1: device: samsung1, ori_error (game_rv): 9.471
+a043_1: device: asus4, ori_error (game_rv): 4.197
+a022_3: device: asus5, ori_error (game_rv): 1.703
+a047_3: device: asus4, ori_error (game_rv): 16.464
+a020_3: device: asus3, ori_error (game_rv): 4.346
+a030_1: device: samsung1, ori_error (game_rv): 8.240
+a044_3: device: samsung1, ori_error (game_rv): 19.618
+a000_4: device: asus3, ori_error (game_rv): 3.275
+a016_3: device: asus4, ori_error (game_rv): 2.559
+a045_1: device: samsung1, ori_error (game_rv): 13.831
+a012_3: device: samsung1, ori_error (ekf): 2.900
+a046_3: device: samsung1, ori_error (ekf): 2.514
+a040_2: device: samsung1, ori_error (game_rv): 11.225
+a013_1: device: asus4, ori_error (game_rv): 11.683
+a028_1: device: asus4, ori_error (game_rv): 1.019
+Training set loaded. Feature size: 6, target size: 2. Time usage: 3.612s
+Number of train samples: 924695
+Total number of parameters:  4193358
+Start from epoch 0
+-------------------------
+Init: average loss: [0.353184 0.353827]/0.353506
+-------------------------
+Epoch 0, time usage: 132.031s, average loss: [0.335465 0.346843]/0.341154
+Model saved to  models/ronin_moe/checkpoints/checkpoint_0.pt
+-------------------------
+Epoch 1, time usage: 133.948s, average loss: [0.180715 0.173287]/0.177001
+Model saved to  models/ronin_moe/checkpoints/checkpoint_1.pt
+-------------------------
+Epoch 2, time usage: 134.476s, average loss: [0.103484 0.097420]/0.100452
+Model saved to  models/ronin_moe/checkpoints/checkpoint_2.pt
+-------------------------
+Epoch 3, time usage: 134.330s, average loss: [0.061040 0.060748]/0.060894
+Model saved to  models/ronin_moe/checkpoints/checkpoint_3.pt
+-------------------------
+Epoch 4, time usage: 138.711s, average loss: [0.050630 0.050480]/0.050555
+Model saved to  models/ronin_moe/checkpoints/checkpoint_4.pt
+-------------------------
+Epoch 5, time usage: 139.314s, average loss: [0.045324 0.045517]/0.045421
+Model saved to  models/ronin_moe/checkpoints/checkpoint_5.pt
+-------------------------
+Epoch 6, time usage: 139.090s, average loss: [0.042515 0.042378]/0.042447
+Model saved to  models/ronin_moe/checkpoints/checkpoint_6.pt
+-------------------------
+Epoch 7, time usage: 141.114s, average loss: [0.038923 0.038956]/0.038939
+Model saved to  models/ronin_moe/checkpoints/checkpoint_7.pt
+-------------------------
+Epoch 8, time usage: 138.664s, average loss: [0.035537 0.035547]/0.035542
+Model saved to  models/ronin_moe/checkpoints/checkpoint_8.pt
+-------------------------
+Epoch 9, time usage: 141.558s, average loss: [0.034112 0.034104]/0.034108
+Model saved to  models/ronin_moe/checkpoints/checkpoint_9.pt
+-------------------------
+Epoch 10, time usage: 138.304s, average loss: [0.032497 0.032403]/0.032450
+Model saved to  models/ronin_moe/checkpoints/checkpoint_10.pt
+-------------------------
+Epoch 11, time usage: 139.380s, average loss: [0.031032 0.030798]/0.030915
+Model saved to  models/ronin_moe/checkpoints/checkpoint_11.pt
+-------------------------
+Epoch 12, time usage: 140.505s, average loss: [0.030058 0.030071]/0.030065
+Model saved to  models/ronin_moe/checkpoints/checkpoint_12.pt
+-------------------------
+Epoch 13, time usage: 139.266s, average loss: [0.029100 0.029077]/0.029089
+Model saved to  models/ronin_moe/checkpoints/checkpoint_13.pt
+-------------------------
+Epoch 14, time usage: 138.911s, average loss: [0.028502 0.028511]/0.028507
+Model saved to  models/ronin_moe/checkpoints/checkpoint_14.pt
+-------------------------
+Epoch 15, time usage: 140.207s, average loss: [0.027927 0.027948]/0.027938
+Model saved to  models/ronin_moe/checkpoints/checkpoint_15.pt
+-------------------------
+Epoch 16, time usage: 140.162s, average loss: [0.027744 0.027512]/0.027628
+Model saved to  models/ronin_moe/checkpoints/checkpoint_16.pt
+-------------------------
+Epoch 17, time usage: 138.186s, average loss: [0.027489 0.027590]/0.027540
+Model saved to  models/ronin_moe/checkpoints/checkpoint_17.pt
+-------------------------
+Epoch 18, time usage: 140.331s, average loss: [0.027566 0.027299]/0.027432
+Model saved to  models/ronin_moe/checkpoints/checkpoint_18.pt
+-------------------------
+Epoch 19, time usage: 137.975s, average loss: [0.027425 0.027566]/0.027496
+Model saved to  models/ronin_moe/checkpoints/checkpoint_19.pt
+-------------------------
+Epoch 20, time usage: 139.639s, average loss: [0.027378 0.027327]/0.027353
+Model saved to  models/ronin_moe/checkpoints/checkpoint_20.pt
+-------------------------
+Epoch 21, time usage: 138.493s, average loss: [0.027668 0.027244]/0.027456
+Model saved to  models/ronin_moe/checkpoints/checkpoint_21.pt
+-------------------------
+Epoch 22, time usage: 140.192s, average loss: [0.027530 0.027529]/0.027529
+Model saved to  models/ronin_moe/checkpoints/checkpoint_22.pt
+-------------------------
+Epoch 23, time usage: 138.010s, average loss: [0.028366 0.028634]/0.028500
+Model saved to  models/ronin_moe/checkpoints/checkpoint_23.pt
+-------------------------
+Epoch 24, time usage: 138.689s, average loss: [0.029466 0.030030]/0.029748
+Model saved to  models/ronin_moe/checkpoints/checkpoint_24.pt
+-------------------------
+Epoch 25, time usage: 136.742s, average loss: [0.031133 0.031059]/0.031096
+Model saved to  models/ronin_moe/checkpoints/checkpoint_25.pt
+-------------------------
+Epoch 26, time usage: 135.054s, average loss: [0.032148 0.032507]/0.032327
+Model saved to  models/ronin_moe/checkpoints/checkpoint_26.pt
+-------------------------
+Epoch 27, time usage: 135.897s, average loss: [0.034399 0.035035]/0.034717
+Model saved to  models/ronin_moe/checkpoints/checkpoint_27.pt
+-------------------------
+Epoch 28, time usage: 134.114s, average loss: [0.037722 0.038140]/0.037931
+Model saved to  models/ronin_moe/checkpoints/checkpoint_28.pt
+-------------------------
+Epoch 29, time usage: 134.747s, average loss: [0.041262 0.040851]/0.041056
+Model saved to  models/ronin_moe/checkpoints/checkpoint_29.pt
+-------------------------
+Epoch 30, time usage: 135.012s, average loss: [0.042846 0.042899]/0.042873
+Model saved to  models/ronin_moe/checkpoints/checkpoint_30.pt
+-------------------------
+Epoch 31, time usage: 135.533s, average loss: [0.042443 0.042425]/0.042434
+Model saved to  models/ronin_moe/checkpoints/checkpoint_31.pt
+-------------------------
+Epoch 32, time usage: 135.320s, average loss: [0.041952 0.042218]/0.042085
+Model saved to  models/ronin_moe/checkpoints/checkpoint_32.pt
+-------------------------
+Epoch 33, time usage: 134.947s, average loss: [0.043041 0.042527]/0.042784
+Model saved to  models/ronin_moe/checkpoints/checkpoint_33.pt
+-------------------------
+Epoch 34, time usage: 135.886s, average loss: [0.041600 0.040899]/0.041250
+Model saved to  models/ronin_moe/checkpoints/checkpoint_34.pt
+-------------------------
+Epoch 35, time usage: 134.739s, average loss: [0.040778 0.040462]/0.040620
+Model saved to  models/ronin_moe/checkpoints/checkpoint_35.pt
+-------------------------
+Epoch 36, time usage: 134.561s, average loss: [0.037922 0.038663]/0.038292
+Model saved to  models/ronin_moe/checkpoints/checkpoint_36.pt
+-------------------------
+Epoch 37, time usage: 134.478s, average loss: [0.038072 0.037598]/0.037835
+Model saved to  models/ronin_moe/checkpoints/checkpoint_37.pt
+-------------------------
+Epoch 38, time usage: 134.143s, average loss: [0.036474 0.036889]/0.036682
+Model saved to  models/ronin_moe/checkpoints/checkpoint_38.pt
+-------------------------
+Epoch 39, time usage: 136.356s, average loss: [0.034855 0.034987]/0.034921
+Model saved to  models/ronin_moe/checkpoints/checkpoint_39.pt
+Training complete
+Checkpoint saved to  models/ronin_moe/checkpoints/checkpoint_latest.pt
+a014_1: device: asus4, ori_error (game_rv): 18.514
+a001_1: device: asus7, ori_error (game_rv): 4.492
+a025_1: device: samsung1, ori_error (ekf): 0.678
+a027_1: device: samsung1, ori_error (game_rv): 1.311
+a025_3: device: samsung1, ori_error (ekf): 5.755
+a017_1: device: samsung1, ori_error (game_rv): 4.741
+a036_1: device: asus4, ori_error (game_rv): 2.034
+a021_3: device: samsung1, ori_error (game_rv): 15.148
+a000_5: device: asus3, ori_error (game_rv): 6.396
+a014_3: device: asus4, ori_error (game_rv): 9.837
+a010_1: device: samsung1, ori_error (ekf): 3.874
+a027_3: device: samsung1, ori_error (game_rv): 8.191
+a015_3: device: samsung1, ori_error (game_rv): 7.806
+a034_1: device: asus7, ori_error (ekf): 3.702
+a022_1: device: asus5, ori_error (game_rv): 15.663
+a034_3: device: asus7, ori_error (game_rv): 8.244
+a005_1: device: samsung1, ori_error (game_rv): 3.970
+a045_2: device: samsung1, ori_error (game_rv): 4.817
+a056_1: device: asus3, ori_error (game_rv): 10.203
+a000_8: device: samsung1, ori_error (game_rv): 8.601
+a056_3: device: asus3, ori_error (game_rv): 14.046
+a033_1: device: samsung1, ori_error (game_rv): 7.305
+a009_2: device: asus4, ori_error (game_rv): 0.892
+a000_6: device: asus3, ori_error (game_rv): 3.249
+a015_2: device: samsung1, ori_error (game_rv): 14.623
+a045_3: device: samsung1, ori_error (game_rv): 12.975
+a015_1: device: samsung1, ori_error (game_rv): 16.236
+a003_2: device: samsung1, ori_error (ekf): 6.719
+a003_1: device: samsung1, ori_error (game_rv): 10.616
+a026_3: device: asus4, ori_error (game_rv): 11.625
+a000_2: device: asus5, ori_error (game_rv): 6.297
+a059_1: device: asus4, ori_error (game_rv): 11.312
+a023_2: device: asus5, ori_error (game_rv): 2.423
+a028_3: device: asus4, ori_error (game_rv): 4.216
+a000_1: device: asus5, ori_error (game_rv): 3.520
+a039_1: device: asus3, ori_error (game_rv): 2.205
+a047_1: device: asus4, ori_error (game_rv): 15.231
+a004_2: device: asus3, ori_error (ekf): 9.161
+a046_1: device: samsung1, ori_error (ekf): 6.108
+a002_1: device: asus4, ori_error (ekf): 0.202
+a012_1: device: samsung1, ori_error (game_rv): 8.180
+a010_3: device: samsung1, ori_error (ekf): 1.013
+a059_3: device: asus4, ori_error (game_rv): 9.448
+a023_3: device: asus5, ori_error (game_rv): 3.493
+a031_1: device: samsung1, ori_error (game_rv): 2.492
+a026_1: device: asus4, ori_error (game_rv): 1.881
+a036_3: device: asus4, ori_error (game_rv): 12.798
+a011_3: device: samsung1, ori_error (gyro_integration): 2.988
+a018_2: device: asus4, ori_error (ekf): 3.249
+a033_3: device: samsung1, ori_error (game_rv): 10.423
+a031_3: device: samsung1, ori_error (game_rv): 6.005
+a037_3: device: asus4, ori_error (ekf): 1.919
+a000_3: device: asus7, ori_error (game_rv): 5.766
+a007_2: device: samsung1, ori_error (ekf): 9.989
+a001_3: device: asus7, ori_error (game_rv): 4.842
+a000_9: device: samsung1, ori_error (game_rv): 3.001
+a018_3: device: asus4, ori_error (game_rv): 2.196
+a039_2: device: asus3, ori_error (game_rv): 17.383
+a040_3: device: samsung1, ori_error (game_rv): 4.998
+a038_3: device: samsung1, ori_error (game_rv): 8.722
+a035_1: device: samsung1, ori_error (ekf): 8.230
+a002_2: device: asus4, ori_error (game_rv): 16.300
+a009_3: device: asus4, ori_error (game_rv): 4.977
+a017_3: device: samsung1, ori_error (game_rv): 3.693
+a020_1: device: asus3, ori_error (game_rv): 5.644
+a013_3: device: asus4, ori_error (game_rv): 1.129
+a038_1: device: samsung1, ori_error (game_rv): 10.237
+a000_10: device: asus4, ori_error (game_rv): 6.669
+a044_1: device: samsung1, ori_error (game_rv): 12.306
+a021_1: device: samsung1, ori_error (ekf): 1.009
+a011_1: device: samsung1, ori_error (game_rv): 9.471
+a043_1: device: asus4, ori_error (game_rv): 4.197
+a022_3: device: asus5, ori_error (game_rv): 1.703
+a047_3: device: asus4, ori_error (game_rv): 16.464
+a020_3: device: asus3, ori_error (game_rv): 4.346
+a030_1: device: samsung1, ori_error (game_rv): 8.240
+a044_3: device: samsung1, ori_error (game_rv): 19.618
+a000_4: device: asus3, ori_error (game_rv): 3.275
+a016_3: device: asus4, ori_error (game_rv): 2.559
+a045_1: device: samsung1, ori_error (game_rv): 13.831
+a012_3: device: samsung1, ori_error (ekf): 2.900
+a046_3: device: samsung1, ori_error (ekf): 2.514
+a040_2: device: samsung1, ori_error (game_rv): 11.225
+a013_1: device: asus4, ori_error (game_rv): 11.683
+a028_1: device: asus4, ori_error (game_rv): 1.019
+Training set loaded. Feature size: 6, target size: 2. Time usage: 3.584s
+Number of train samples: 924695
+Total number of parameters:  4193358
+Start from epoch 0
+-------------------------
+Init: average loss: [0.353231 0.353769]/0.353500
+-------------------------
+Epoch 0, time usage: 130.793s, average loss: [0.100107 0.099713]/0.099910
+Model saved to  models/ronin_moe/checkpoints/checkpoint_0.pt
+-------------------------
+Epoch 1, time usage: 134.774s, average loss: [0.052633 0.052036]/0.052334
+Model saved to  models/ronin_moe/checkpoints/checkpoint_1.pt
+-------------------------
+Epoch 2, time usage: 137.758s, average loss: [0.043748 0.043481]/0.043614
+Model saved to  models/ronin_moe/checkpoints/checkpoint_2.pt
+-------------------------
+Epoch 3, time usage: 134.236s, average loss: [0.038311 0.038243]/0.038277
+Model saved to  models/ronin_moe/checkpoints/checkpoint_3.pt
+-------------------------
+Epoch 4, time usage: 137.199s, average loss: [0.034568 0.034345]/0.034457
+Model saved to  models/ronin_moe/checkpoints/checkpoint_4.pt
+-------------------------
+Epoch 5, time usage: 138.339s, average loss: [0.031526 0.031667]/0.031596
+Model saved to  models/ronin_moe/checkpoints/checkpoint_5.pt
+-------------------------
+Epoch 6, time usage: 136.476s, average loss: [0.029673 0.029656]/0.029664
+Model saved to  models/ronin_moe/checkpoints/checkpoint_6.pt
+-------------------------
+Epoch 7, time usage: 135.927s, average loss: [0.028058 0.027878]/0.027968
+Model saved to  models/ronin_moe/checkpoints/checkpoint_7.pt
+-------------------------
+Epoch 8, time usage: 133.999s, average loss: [0.026690 0.026532]/0.026611
+Model saved to  models/ronin_moe/checkpoints/checkpoint_8.pt
+-------------------------
+Epoch 9, time usage: 133.445s, average loss: [0.025642 0.025559]/0.025600
+Model saved to  models/ronin_moe/checkpoints/checkpoint_9.pt
+-------------------------
+Epoch 10, time usage: 134.283s, average loss: [0.024702 0.024848]/0.024775
+Model saved to  models/ronin_moe/checkpoints/checkpoint_10.pt
+-------------------------
+Epoch 11, time usage: 141.819s, average loss: [0.024043 0.024093]/0.024068
+Model saved to  models/ronin_moe/checkpoints/checkpoint_11.pt
+-------------------------
+Epoch 12, time usage: 136.435s, average loss: [0.023533 0.023535]/0.023534
+Model saved to  models/ronin_moe/checkpoints/checkpoint_12.pt
+-------------------------
+Epoch 13, time usage: 134.613s, average loss: [0.023455 0.023334]/0.023394
+Model saved to  models/ronin_moe/checkpoints/checkpoint_13.pt
+-------------------------
+Epoch 14, time usage: 134.103s, average loss: [0.023441 0.023587]/0.023514
+Model saved to  models/ronin_moe/checkpoints/checkpoint_14.pt
+-------------------------
+Epoch 15, time usage: 138.369s, average loss: [0.023651 0.023455]/0.023553
+Model saved to  models/ronin_moe/checkpoints/checkpoint_15.pt
+-------------------------
+Epoch 16, time usage: 138.648s, average loss: [0.023319 0.023384]/0.023352
+Model saved to  models/ronin_moe/checkpoints/checkpoint_16.pt
+-------------------------
+Epoch 17, time usage: 140.468s, average loss: [0.023011 0.023014]/0.023012
+Model saved to  models/ronin_moe/checkpoints/checkpoint_17.pt
+-------------------------
+Epoch 18, time usage: 137.855s, average loss: [0.022711 0.022613]/0.022662
+Model saved to  models/ronin_moe/checkpoints/checkpoint_18.pt
+-------------------------
+Epoch 19, time usage: 138.791s, average loss: [0.022376 0.022368]/0.022372
+Model saved to  models/ronin_moe/checkpoints/checkpoint_19.pt
+-------------------------
+Epoch 20, time usage: 138.626s, average loss: [0.021936 0.022107]/0.022022
+Model saved to  models/ronin_moe/checkpoints/checkpoint_20.pt
+-------------------------
+Epoch 21, time usage: 141.999s, average loss: [0.021615 0.021669]/0.021642
+Model saved to  models/ronin_moe/checkpoints/checkpoint_21.pt
+-------------------------
+Epoch 22, time usage: 138.912s, average loss: [0.021413 0.021373]/0.021393
+Model saved to  models/ronin_moe/checkpoints/checkpoint_22.pt
+-------------------------
+Epoch 23, time usage: 138.230s, average loss: [0.021130 0.021079]/0.021105
+Model saved to  models/ronin_moe/checkpoints/checkpoint_23.pt
+-------------------------
+Epoch 24, time usage: 138.301s, average loss: [0.020852 0.020915]/0.020883
+Model saved to  models/ronin_moe/checkpoints/checkpoint_24.pt
+-------------------------
+Epoch 25, time usage: 138.423s, average loss: [0.020647 0.020625]/0.020636
+Model saved to  models/ronin_moe/checkpoints/checkpoint_25.pt
+-------------------------
+Epoch 26, time usage: 139.753s, average loss: [0.020446 0.020421]/0.020433
+Model saved to  models/ronin_moe/checkpoints/checkpoint_26.pt
+-------------------------
+Epoch 27, time usage: 137.918s, average loss: [0.020382 0.020305]/0.020343
+Model saved to  models/ronin_moe/checkpoints/checkpoint_27.pt
+-------------------------
+Epoch 28, time usage: 147.098s, average loss: [0.020098 0.019984]/0.020041
+Model saved to  models/ronin_moe/checkpoints/checkpoint_28.pt
+-------------------------
+Epoch 29, time usage: 136.588s, average loss: [0.019938 0.019802]/0.019870
+Model saved to  models/ronin_moe/checkpoints/checkpoint_29.pt
+-------------------------
+Epoch 30, time usage: 133.397s, average loss: [0.019511 0.019561]/0.019536
+Model saved to  models/ronin_moe/checkpoints/checkpoint_30.pt
+-------------------------
+Epoch 31, time usage: 136.228s, average loss: [0.019428 0.019334]/0.019381
+Model saved to  models/ronin_moe/checkpoints/checkpoint_31.pt
+-------------------------
+Epoch 32, time usage: 133.479s, average loss: [0.019189 0.019286]/0.019237
+Model saved to  models/ronin_moe/checkpoints/checkpoint_32.pt
+-------------------------
+Epoch 33, time usage: 143.885s, average loss: [0.019048 0.019069]/0.019059
+Model saved to  models/ronin_moe/checkpoints/checkpoint_33.pt
+-------------------------
+Epoch 34, time usage: 148.142s, average loss: [0.018830 0.018754]/0.018792
+Model saved to  models/ronin_moe/checkpoints/checkpoint_34.pt
+-------------------------
+Epoch 35, time usage: 138.108s, average loss: [0.018637 0.018557]/0.018597
+Model saved to  models/ronin_moe/checkpoints/checkpoint_35.pt
+-------------------------
+Epoch 36, time usage: 149.167s, average loss: [0.018373 0.018390]/0.018381
+Model saved to  models/ronin_moe/checkpoints/checkpoint_36.pt
+-------------------------
+Epoch 37, time usage: 134.006s, average loss: [0.018470 0.018417]/0.018444
+Model saved to  models/ronin_moe/checkpoints/checkpoint_37.pt
+-------------------------
+Epoch 38, time usage: 133.944s, average loss: [0.019090 0.019093]/0.019091
+Model saved to  models/ronin_moe/checkpoints/checkpoint_38.pt
+-------------------------
+Epoch 39, time usage: 134.253s, average loss: [0.019195 0.019212]/0.019204
+Model saved to  models/ronin_moe/checkpoints/checkpoint_39.pt
+Training complete
+Checkpoint saved to  models/ronin_moe/checkpoints/checkpoint_latest.pt
+a014_1: device: asus4, ori_error (game_rv): 18.514
+a001_1: device: asus7, ori_error (game_rv): 4.492
+a025_1: device: samsung1, ori_error (ekf): 0.678
+a027_1: device: samsung1, ori_error (game_rv): 1.311
+a025_3: device: samsung1, ori_error (ekf): 5.755
+a017_1: device: samsung1, ori_error (game_rv): 4.741
+a036_1: device: asus4, ori_error (game_rv): 2.034
+a021_3: device: samsung1, ori_error (game_rv): 15.148
+a000_5: device: asus3, ori_error (game_rv): 6.396
+a014_3: device: asus4, ori_error (game_rv): 9.837
+a010_1: device: samsung1, ori_error (ekf): 3.874
+a027_3: device: samsung1, ori_error (game_rv): 8.191
+a015_3: device: samsung1, ori_error (game_rv): 7.806
+a034_1: device: asus7, ori_error (ekf): 3.702
+a022_1: device: asus5, ori_error (game_rv): 15.663
+a034_3: device: asus7, ori_error (game_rv): 8.244
+a005_1: device: samsung1, ori_error (game_rv): 3.970
+a045_2: device: samsung1, ori_error (game_rv): 4.817
+a056_1: device: asus3, ori_error (game_rv): 10.203
+a000_8: device: samsung1, ori_error (game_rv): 8.601
+a056_3: device: asus3, ori_error (game_rv): 14.046
+a033_1: device: samsung1, ori_error (game_rv): 7.305
+a009_2: device: asus4, ori_error (game_rv): 0.892
+a000_6: device: asus3, ori_error (game_rv): 3.249
+a015_2: device: samsung1, ori_error (game_rv): 14.623
+a045_3: device: samsung1, ori_error (game_rv): 12.975
+a015_1: device: samsung1, ori_error (game_rv): 16.236
+a003_2: device: samsung1, ori_error (ekf): 6.719
+a003_1: device: samsung1, ori_error (game_rv): 10.616
+a026_3: device: asus4, ori_error (game_rv): 11.625
+a000_2: device: asus5, ori_error (game_rv): 6.297
+a059_1: device: asus4, ori_error (game_rv): 11.312
+a023_2: device: asus5, ori_error (game_rv): 2.423
+a028_3: device: asus4, ori_error (game_rv): 4.216
+a000_1: device: asus5, ori_error (game_rv): 3.520
+a039_1: device: asus3, ori_error (game_rv): 2.205
+a047_1: device: asus4, ori_error (game_rv): 15.231
+a004_2: device: asus3, ori_error (ekf): 9.161
+a046_1: device: samsung1, ori_error (ekf): 6.108
+a002_1: device: asus4, ori_error (ekf): 0.202
+a012_1: device: samsung1, ori_error (game_rv): 8.180
+a010_3: device: samsung1, ori_error (ekf): 1.013
+a059_3: device: asus4, ori_error (game_rv): 9.448
+a023_3: device: asus5, ori_error (game_rv): 3.493
+a031_1: device: samsung1, ori_error (game_rv): 2.492
+a026_1: device: asus4, ori_error (game_rv): 1.881
+a036_3: device: asus4, ori_error (game_rv): 12.798
+a011_3: device: samsung1, ori_error (gyro_integration): 2.988
+a018_2: device: asus4, ori_error (ekf): 3.249
+a033_3: device: samsung1, ori_error (game_rv): 10.423
+a031_3: device: samsung1, ori_error (game_rv): 6.005
+a037_3: device: asus4, ori_error (ekf): 1.919
+a000_3: device: asus7, ori_error (game_rv): 5.766
+a007_2: device: samsung1, ori_error (ekf): 9.989
+a001_3: device: asus7, ori_error (game_rv): 4.842
+a000_9: device: samsung1, ori_error (game_rv): 3.001
+a018_3: device: asus4, ori_error (game_rv): 2.196
+a039_2: device: asus3, ori_error (game_rv): 17.383
+a040_3: device: samsung1, ori_error (game_rv): 4.998
+a038_3: device: samsung1, ori_error (game_rv): 8.722
+a035_1: device: samsung1, ori_error (ekf): 8.230
+a002_2: device: asus4, ori_error (game_rv): 16.300
+a009_3: device: asus4, ori_error (game_rv): 4.977
+a017_3: device: samsung1, ori_error (game_rv): 3.693
+a020_1: device: asus3, ori_error (game_rv): 5.644
+a013_3: device: asus4, ori_error (game_rv): 1.129
+a038_1: device: samsung1, ori_error (game_rv): 10.237
+a000_10: device: asus4, ori_error (game_rv): 6.669
+a044_1: device: samsung1, ori_error (game_rv): 12.306
+a021_1: device: samsung1, ori_error (ekf): 1.009
+a011_1: device: samsung1, ori_error (game_rv): 9.471
+a043_1: device: asus4, ori_error (game_rv): 4.197
+a022_3: device: asus5, ori_error (game_rv): 1.703
+a047_3: device: asus4, ori_error (game_rv): 16.464
+a020_3: device: asus3, ori_error (game_rv): 4.346
+a030_1: device: samsung1, ori_error (game_rv): 8.240
+a044_3: device: samsung1, ori_error (game_rv): 19.618
+a000_4: device: asus3, ori_error (game_rv): 3.275
+a016_3: device: asus4, ori_error (game_rv): 2.559
+a045_1: device: samsung1, ori_error (game_rv): 13.831
+a012_3: device: samsung1, ori_error (ekf): 2.900
+a046_3: device: samsung1, ori_error (ekf): 2.514
+a040_2: device: samsung1, ori_error (game_rv): 11.225
+a013_1: device: asus4, ori_error (game_rv): 11.683
+a028_1: device: asus4, ori_error (game_rv): 1.019
+Training set loaded. Feature size: 6, target size: 2. Time usage: 3.624s
+Number of train samples: 924695
+Total number of parameters:  4193358
+Start from epoch 0
+-------------------------
+Init: average loss: [0.353441 0.353562]/0.353501
+-------------------------
+Epoch 0, time usage: 256.245s, average loss: [0.090160 0.089510]/0.089835
+Model saved to  models/ronin_moe/checkpoints/checkpoint_0.pt
+-------------------------
+Epoch 1, time usage: 252.947s, average loss: [0.050159 0.050226]/0.050193
+Model saved to  models/ronin_moe/checkpoints/checkpoint_1.pt
+-------------------------
+Epoch 2, time usage: 260.590s, average loss: [0.042046 0.042107]/0.042076
+Model saved to  models/ronin_moe/checkpoints/checkpoint_2.pt
+-------------------------
+Epoch 3, time usage: 256.087s, average loss: [0.036556 0.036522]/0.036539
+Model saved to  models/ronin_moe/checkpoints/checkpoint_3.pt
+-------------------------
+Epoch 4, time usage: 254.870s, average loss: [0.032967 0.032962]/0.032964
+Model saved to  models/ronin_moe/checkpoints/checkpoint_4.pt
+-------------------------
+Epoch 5, time usage: 253.545s, average loss: [0.030495 0.030590]/0.030543
+Model saved to  models/ronin_moe/checkpoints/checkpoint_5.pt
+-------------------------
+Epoch 6, time usage: 253.603s, average loss: [0.028745 0.028811]/0.028778
+Model saved to  models/ronin_moe/checkpoints/checkpoint_6.pt
+-------------------------
+Epoch 7, time usage: 246.426s, average loss: [0.027406 0.027369]/0.027387
+Model saved to  models/ronin_moe/checkpoints/checkpoint_7.pt
+-------------------------
+Epoch 8, time usage: 246.499s, average loss: [0.026515 0.026564]/0.026540
+Model saved to  models/ronin_moe/checkpoints/checkpoint_8.pt
+-------------------------
+Epoch 9, time usage: 245.167s, average loss: [0.025799 0.025862]/0.025830
+Model saved to  models/ronin_moe/checkpoints/checkpoint_9.pt
+-------------------------
+Epoch 10, time usage: 246.873s, average loss: [0.026694 0.026540]/0.026617
+Model saved to  models/ronin_moe/checkpoints/checkpoint_10.pt
+-------------------------
+Epoch 11, time usage: 245.080s, average loss: [0.027683 0.027738]/0.027710
+Model saved to  models/ronin_moe/checkpoints/checkpoint_11.pt
+-------------------------
+Epoch 12, time usage: 246.516s, average loss: [0.028593 0.028524]/0.028558
+Model saved to  models/ronin_moe/checkpoints/checkpoint_12.pt
+-------------------------
+Epoch 13, time usage: 245.527s, average loss: [0.027920 0.027955]/0.027938
+Model saved to  models/ronin_moe/checkpoints/checkpoint_13.pt
+-------------------------
+Epoch 14, time usage: 244.695s, average loss: [0.027028 0.027067]/0.027047
+Model saved to  models/ronin_moe/checkpoints/checkpoint_14.pt
+-------------------------
+Epoch 15, time usage: 245.781s, average loss: [0.026221 0.026199]/0.026210
+Model saved to  models/ronin_moe/checkpoints/checkpoint_15.pt
+-------------------------
+Epoch 16, time usage: 252.492s, average loss: [0.025390 0.025446]/0.025418
+Model saved to  models/ronin_moe/checkpoints/checkpoint_16.pt
+-------------------------
+Epoch 17, time usage: 252.771s, average loss: [0.024922 0.024960]/0.024941
+Model saved to  models/ronin_moe/checkpoints/checkpoint_17.pt
+-------------------------
+Epoch 18, time usage: 251.047s, average loss: [0.024546 0.024544]/0.024545
+Model saved to  models/ronin_moe/checkpoints/checkpoint_18.pt
+-------------------------
+Epoch 19, time usage: 246.399s, average loss: [0.024283 0.024201]/0.024242
+Model saved to  models/ronin_moe/checkpoints/checkpoint_19.pt
+-------------------------
+Epoch 20, time usage: 247.121s, average loss: [0.023741 0.023735]/0.023738
+Model saved to  models/ronin_moe/checkpoints/checkpoint_20.pt
+-------------------------
+Epoch 21, time usage: 254.672s, average loss: [0.023240 0.023373]/0.023307
+Model saved to  models/ronin_moe/checkpoints/checkpoint_21.pt
+-------------------------
+Epoch 22, time usage: 247.248s, average loss: [0.023242 0.023257]/0.023250
+Model saved to  models/ronin_moe/checkpoints/checkpoint_22.pt
+-------------------------
+Epoch 23, time usage: 245.796s, average loss: [0.023012 0.023184]/0.023098
+Model saved to  models/ronin_moe/checkpoints/checkpoint_23.pt
+-------------------------
+Epoch 24, time usage: 254.030s, average loss: [0.023285 0.023047]/0.023166
+Model saved to  models/ronin_moe/checkpoints/checkpoint_24.pt
+-------------------------
+Epoch 25, time usage: 253.011s, average loss: [0.022711 0.022586]/0.022649
+Model saved to  models/ronin_moe/checkpoints/checkpoint_25.pt
+-------------------------
+Epoch 26, time usage: 253.715s, average loss: [0.022581 0.022517]/0.022549
+Model saved to  models/ronin_moe/checkpoints/checkpoint_26.pt
+-------------------------
+Epoch 27, time usage: 255.238s, average loss: [0.022359 0.022215]/0.022287
+Model saved to  models/ronin_moe/checkpoints/checkpoint_27.pt
+-------------------------
+Epoch 28, time usage: 252.865s, average loss: [0.022202 0.022089]/0.022146
+Model saved to  models/ronin_moe/checkpoints/checkpoint_28.pt
+-------------------------
+Epoch 29, time usage: 253.010s, average loss: [0.021905 0.021872]/0.021888
+Model saved to  models/ronin_moe/checkpoints/checkpoint_29.pt
+-------------------------
+Epoch 30, time usage: 251.871s, average loss: [0.021604 0.021674]/0.021639
+Model saved to  models/ronin_moe/checkpoints/checkpoint_30.pt
+-------------------------
+Epoch 31, time usage: 265.235s, average loss: [0.021456 0.021576]/0.021516
+Model saved to  models/ronin_moe/checkpoints/checkpoint_31.pt
+-------------------------
+Epoch 32, time usage: 244.874s, average loss: [0.021333 0.021302]/0.021317
+Model saved to  models/ronin_moe/checkpoints/checkpoint_32.pt
+-------------------------
+Epoch 33, time usage: 245.372s, average loss: [0.021130 0.021022]/0.021076
+Model saved to  models/ronin_moe/checkpoints/checkpoint_33.pt
+-------------------------
+Epoch 34, time usage: 244.280s, average loss: [0.021149 0.021033]/0.021091
+Model saved to  models/ronin_moe/checkpoints/checkpoint_34.pt
+-------------------------
+Epoch 35, time usage: 244.053s, average loss: [0.020629 0.020700]/0.020665
+Model saved to  models/ronin_moe/checkpoints/checkpoint_35.pt
+-------------------------
+Epoch 36, time usage: 244.218s, average loss: [0.020432 0.020206]/0.020319
+Model saved to  models/ronin_moe/checkpoints/checkpoint_36.pt
+-------------------------
+Epoch 37, time usage: 245.385s, average loss: [0.020343 0.020326]/0.020334
+Model saved to  models/ronin_moe/checkpoints/checkpoint_37.pt
+-------------------------
+Epoch 38, time usage: 245.017s, average loss: [0.020194 0.020176]/0.020185
+Model saved to  models/ronin_moe/checkpoints/checkpoint_38.pt
+-------------------------
+Epoch 39, time usage: 265.583s, average loss: [0.019958 0.019928]/0.019943
+Model saved to  models/ronin_moe/checkpoints/checkpoint_39.pt
+-------------------------
+Epoch 40, time usage: 245.193s, average loss: [0.019597 0.019554]/0.019575
+Model saved to  models/ronin_moe/checkpoints/checkpoint_40.pt
+-------------------------
+Epoch 41, time usage: 244.545s, average loss: [0.019277 0.019230]/0.019254
+Model saved to  models/ronin_moe/checkpoints/checkpoint_41.pt
+-------------------------
+Epoch 42, time usage: 244.129s, average loss: [0.019196 0.019220]/0.019208
+Model saved to  models/ronin_moe/checkpoints/checkpoint_42.pt
+-------------------------
+Epoch 43, time usage: 244.659s, average loss: [0.018906 0.019018]/0.018962
+Model saved to  models/ronin_moe/checkpoints/checkpoint_43.pt
+-------------------------
+Epoch 44, time usage: 245.464s, average loss: [0.018602 0.018836]/0.018719
+Model saved to  models/ronin_moe/checkpoints/checkpoint_44.pt
+-------------------------
+Epoch 45, time usage: 243.739s, average loss: [0.018602 0.018617]/0.018610
+Model saved to  models/ronin_moe/checkpoints/checkpoint_45.pt
+-------------------------
+Epoch 46, time usage: 244.505s, average loss: [0.018397 0.018489]/0.018443
+Model saved to  models/ronin_moe/checkpoints/checkpoint_46.pt
+-------------------------
+Epoch 47, time usage: 245.970s, average loss: [0.018307 0.018375]/0.018341
+Model saved to  models/ronin_moe/checkpoints/checkpoint_47.pt
+-------------------------
+Epoch 48, time usage: 247.460s, average loss: [0.018271 0.018209]/0.018240
+Model saved to  models/ronin_moe/checkpoints/checkpoint_48.pt
+-------------------------
+Epoch 49, time usage: 245.647s, average loss: [0.018226 0.018223]/0.018224
+Model saved to  models/ronin_moe/checkpoints/checkpoint_49.pt
+-------------------------
+Epoch 50, time usage: 244.717s, average loss: [0.018242 0.018165]/0.018204
+Model saved to  models/ronin_moe/checkpoints/checkpoint_50.pt
+-------------------------
+Epoch 51, time usage: 245.748s, average loss: [0.018196 0.018260]/0.018228
+Model saved to  models/ronin_moe/checkpoints/checkpoint_51.pt
+-------------------------
+Epoch 52, time usage: 245.697s, average loss: [0.018097 0.018121]/0.018109
+Model saved to  models/ronin_moe/checkpoints/checkpoint_52.pt
+-------------------------
+Epoch 53, time usage: 245.685s, average loss: [0.018074 0.018088]/0.018081
+Model saved to  models/ronin_moe/checkpoints/checkpoint_53.pt
+-------------------------
+Epoch 54, time usage: 244.882s, average loss: [0.017867 0.017871]/0.017869
+Model saved to  models/ronin_moe/checkpoints/checkpoint_54.pt
+-------------------------
+Epoch 55, time usage: 245.065s, average loss: [0.017929 0.017847]/0.017888
+Model saved to  models/ronin_moe/checkpoints/checkpoint_55.pt
+-------------------------
+Epoch 56, time usage: 245.585s, average loss: [0.017791 0.017761]/0.017776
+Model saved to  models/ronin_moe/checkpoints/checkpoint_56.pt
+-------------------------
+Epoch 57, time usage: 245.274s, average loss: [0.017736 0.017751]/0.017743
+Model saved to  models/ronin_moe/checkpoints/checkpoint_57.pt
+-------------------------
+Epoch 58, time usage: 245.171s, average loss: [0.017683 0.017706]/0.017694
+Model saved to  models/ronin_moe/checkpoints/checkpoint_58.pt
+-------------------------
+Epoch 59, time usage: 244.504s, average loss: [0.017630 0.017673]/0.017652
+Model saved to  models/ronin_moe/checkpoints/checkpoint_59.pt
+-------------------------
+Epoch 60, time usage: 245.746s, average loss: [0.017486 0.017589]/0.017537
+Model saved to  models/ronin_moe/checkpoints/checkpoint_60.pt
+-------------------------
+Epoch 61, time usage: 247.400s, average loss: [0.017449 0.017530]/0.017489
+Model saved to  models/ronin_moe/checkpoints/checkpoint_61.pt
+-------------------------
+Epoch 62, time usage: 244.607s, average loss: [0.017490 0.017420]/0.017455
+Model saved to  models/ronin_moe/checkpoints/checkpoint_62.pt
+-------------------------
+Epoch 63, time usage: 246.047s, average loss: [0.017401 0.017454]/0.017427
+Model saved to  models/ronin_moe/checkpoints/checkpoint_63.pt
+-------------------------
+Epoch 64, time usage: 245.530s, average loss: [0.017308 0.017371]/0.017340
+Model saved to  models/ronin_moe/checkpoints/checkpoint_64.pt
+-------------------------
+Epoch 65, time usage: 246.674s, average loss: [0.017346 0.017204]/0.017275
+Model saved to  models/ronin_moe/checkpoints/checkpoint_65.pt
+-------------------------
+Epoch 66, time usage: 245.687s, average loss: [0.017279 0.017209]/0.017244
+Model saved to  models/ronin_moe/checkpoints/checkpoint_66.pt
+-------------------------
+Epoch 67, time usage: 244.939s, average loss: [0.017182 0.017250]/0.017216
+Model saved to  models/ronin_moe/checkpoints/checkpoint_67.pt
+-------------------------
+Epoch 68, time usage: 246.312s, average loss: [0.017225 0.017254]/0.017240
+Model saved to  models/ronin_moe/checkpoints/checkpoint_68.pt
+-------------------------
+Epoch 69, time usage: 247.581s, average loss: [0.017190 0.017171]/0.017181
+Model saved to  models/ronin_moe/checkpoints/checkpoint_69.pt
+-------------------------
+Epoch 70, time usage: 246.718s, average loss: [0.017185 0.017165]/0.017175
+Model saved to  models/ronin_moe/checkpoints/checkpoint_70.pt
+-------------------------
+Epoch 71, time usage: 245.512s, average loss: [0.017069 0.016955]/0.017012
+Model saved to  models/ronin_moe/checkpoints/checkpoint_71.pt
+-------------------------
+Epoch 72, time usage: 245.752s, average loss: [0.017043 0.016951]/0.016997
+Model saved to  models/ronin_moe/checkpoints/checkpoint_72.pt
+-------------------------
+Epoch 73, time usage: 244.711s, average loss: [0.017102 0.016911]/0.017007
+Model saved to  models/ronin_moe/checkpoints/checkpoint_73.pt
+-------------------------
+Epoch 74, time usage: 257.305s, average loss: [0.016847 0.016959]/0.016903
+Model saved to  models/ronin_moe/checkpoints/checkpoint_74.pt
+-------------------------
+Epoch 75, time usage: 255.795s, average loss: [0.016897 0.016889]/0.016893
+Model saved to  models/ronin_moe/checkpoints/checkpoint_75.pt
+-------------------------
+Epoch 76, time usage: 251.337s, average loss: [0.016890 0.016786]/0.016838
+Model saved to  models/ronin_moe/checkpoints/checkpoint_76.pt
+-------------------------
+Epoch 77, time usage: 253.727s, average loss: [0.016842 0.016802]/0.016822
+Model saved to  models/ronin_moe/checkpoints/checkpoint_77.pt
+-------------------------
+Epoch 78, time usage: 261.962s, average loss: [0.016715 0.016839]/0.016777
+Model saved to  models/ronin_moe/checkpoints/checkpoint_78.pt
+-------------------------
+Epoch 79, time usage: 252.930s, average loss: [0.016765 0.016647]/0.016706
+Model saved to  models/ronin_moe/checkpoints/checkpoint_79.pt
+-------------------------
+Epoch 80, time usage: 254.096s, average loss: [0.016719 0.016790]/0.016755
+Model saved to  models/ronin_moe/checkpoints/checkpoint_80.pt
+-------------------------
+Epoch 81, time usage: 254.217s, average loss: [0.016768 0.016665]/0.016717
+Model saved to  models/ronin_moe/checkpoints/checkpoint_81.pt
+-------------------------
+Epoch 82, time usage: 252.132s, average loss: [0.016617 0.016692]/0.016654
+Model saved to  models/ronin_moe/checkpoints/checkpoint_82.pt
+-------------------------
+Epoch 83, time usage: 253.502s, average loss: [0.016576 0.016675]/0.016626
+Model saved to  models/ronin_moe/checkpoints/checkpoint_83.pt
+-------------------------
+Epoch 84, time usage: 252.586s, average loss: [0.016642 0.016653]/0.016648
+Model saved to  models/ronin_moe/checkpoints/checkpoint_84.pt
+-------------------------
+Epoch 85, time usage: 252.469s, average loss: [0.016571 0.016524]/0.016548
+Model saved to  models/ronin_moe/checkpoints/checkpoint_85.pt
+-------------------------
+Epoch 86, time usage: 252.449s, average loss: [0.016498 0.016520]/0.016509
+Model saved to  models/ronin_moe/checkpoints/checkpoint_86.pt
+-------------------------
+Epoch 87, time usage: 248.349s, average loss: [0.016468 0.016572]/0.016520
+Model saved to  models/ronin_moe/checkpoints/checkpoint_87.pt
+-------------------------
+Epoch 88, time usage: 246.243s, average loss: [0.016458 0.016563]/0.016511
+Model saved to  models/ronin_moe/checkpoints/checkpoint_88.pt
+-------------------------
+Epoch 89, time usage: 244.201s, average loss: [0.016432 0.016554]/0.016493
+Model saved to  models/ronin_moe/checkpoints/checkpoint_89.pt
+-------------------------
+Epoch 90, time usage: 244.943s, average loss: [0.016390 0.016460]/0.016425
+Model saved to  models/ronin_moe/checkpoints/checkpoint_90.pt
+-------------------------
+Epoch 91, time usage: 245.163s, average loss: [0.016484 0.016443]/0.016463
+Model saved to  models/ronin_moe/checkpoints/checkpoint_91.pt
+-------------------------
+Epoch 92, time usage: 244.513s, average loss: [0.016473 0.016408]/0.016441
+Model saved to  models/ronin_moe/checkpoints/checkpoint_92.pt
+-------------------------
+Epoch 93, time usage: 247.492s, average loss: [0.016309 0.016380]/0.016344
+Model saved to  models/ronin_moe/checkpoints/checkpoint_93.pt
+-------------------------
+Epoch 94, time usage: 245.398s, average loss: [0.016451 0.016500]/0.016475
+Model saved to  models/ronin_moe/checkpoints/checkpoint_94.pt
+-------------------------
+Epoch 95, time usage: 245.778s, average loss: [0.016397 0.016446]/0.016422
+Model saved to  models/ronin_moe/checkpoints/checkpoint_95.pt
+-------------------------
+Epoch 96, time usage: 247.408s, average loss: [0.016373 0.016358]/0.016365
+Model saved to  models/ronin_moe/checkpoints/checkpoint_96.pt
+-------------------------
+Epoch 97, time usage: 243.749s, average loss: [0.016330 0.016356]/0.016343
+Model saved to  models/ronin_moe/checkpoints/checkpoint_97.pt
+-------------------------
+Epoch 98, time usage: 244.431s, average loss: [0.016402 0.016331]/0.016366
+Model saved to  models/ronin_moe/checkpoints/checkpoint_98.pt
+-------------------------
+Epoch 99, time usage: 264.386s, average loss: [0.016258 0.016332]/0.016295
+Model saved to  models/ronin_moe/checkpoints/checkpoint_99.pt
+Training complete
+Checkpoint saved to  models/ronin_moe/checkpoints/checkpoint_latest.pt
